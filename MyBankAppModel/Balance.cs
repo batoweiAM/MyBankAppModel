@@ -13,12 +13,12 @@ namespace MyBankAppModel
     {
         public void DisplayBalance(Account account)
         {
-            Console.BackgroundColor = ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("ACCOUNT DETAILS");
             Console.WriteLine("|-------------------|-------------------------------|--------------------------|---------------------|");
             Console.WriteLine("| FULL NAME         | ACCOUNT NUMBER                | ACCOUNT TYPE             | AMOUNT BAL          |");
             Console.WriteLine("|-------------------|-------------------------------|--------------------------|---------------------|");
-            Console.WriteLine($"| {account.FullName,-17} | {account.AccountNumber,-30} | {account.AccountType,-24} | {account.GetBalance(),-19:C} |");
+            Console.WriteLine($"| {account.FullName,-17} | {account.AccountNumber,-30}| {account.AccountType,-24} | {account.GetBalance(),-19:C} |");
             Console.WriteLine("|-------------------|-------------------------------|--------------------------|---------------------|");
             Console.ResetColor();
         }

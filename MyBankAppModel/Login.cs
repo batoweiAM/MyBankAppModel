@@ -12,6 +12,7 @@ namespace MyBankAppModel
     {
         public void LoginUser(Bank bank)
         {
+            Console.WriteLine("Glad to have you here, please login with the correct details.");
             Console.Write("Enter Email: ");
             string enteredEmail = Console.ReadLine();
 
@@ -20,7 +21,7 @@ namespace MyBankAppModel
 
             Account account  = bank.GetAccounts().Find(x=>x.Email == enteredEmail && x.Password ==enteredPassword);
 
-            if (account != null) //Authenticate(enteredEmail, enteredPassword)
+            if (account != null)
             {
                 Console.WriteLine("Login Successful!");
                 BankOperations(account, bank);
@@ -29,8 +30,6 @@ namespace MyBankAppModel
             {
                 Console.WriteLine("Invalid email or password. Login failed.");
             }
-
-
         }
 
         public void BankOperations(Account account, Bank bank)
