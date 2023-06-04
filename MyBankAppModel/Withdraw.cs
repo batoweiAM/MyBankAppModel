@@ -33,8 +33,6 @@ namespace MyBankAppModel
                 }
                 else
                 {
-                    // Perform the withdrawal logic here
-                    // Update the account balance for current account
                     account.DeductBalance(amount);
                     Console.WriteLine($"Successfully withdrew {amount} from the current account.");
                     account.Transactions.Add(new Transaction
