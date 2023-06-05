@@ -16,7 +16,7 @@ namespace MyBankAppModel
             {
                 Console.WriteLine("WELCOME TO YOUR BANK APP");
                 Console.WriteLine();
-                Console.WriteLine("1. Register/OpenAccount");
+                Console.WriteLine("1. Register & OpenAccount");
                 Console.WriteLine("2. Login");
                 Console.WriteLine("3. Exit");
                 Console.WriteLine("Enter your Choice");

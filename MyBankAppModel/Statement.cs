@@ -19,7 +19,7 @@ namespace MyBankAppModel
 
             foreach (Transaction transaction in account.Transactions)
             {
-                Console.WriteLine($"| {transaction.Date,-17}    | {transaction.Description,-30}| {transaction.Amount,-24:C} | {transaction.Balance,-19:C} |");
+                Console.WriteLine($"| {transaction.Date,-17}        | {transaction.Description,-30}| {transaction.Amount,-24:C} | {transaction.Balance,-19:C} |");
             }
 
             Console.WriteLine("|-------------------------|-------------------------------|--------------------------|---------------------|");
